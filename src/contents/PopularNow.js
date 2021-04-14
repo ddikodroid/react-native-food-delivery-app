@@ -5,6 +5,7 @@ export const popularNow = [
     subtitle: 'Extra yummy beef🥩',
     price: 12.9,
     image: require('../assets/images/double-beef-burger.png'),
+    bestSeller: true,
   },
   {
     id: 2,
