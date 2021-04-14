@@ -25,6 +25,7 @@ const HomeScreen = () => {
         data={home}
         renderItem={renderHome}
         showsVerticalScrollIndicator={false}
+        keyExtractor={(item, index) => index.toString()}
       />
     </SafeAreaView>
   );
