@@ -2,11 +2,10 @@ export const FONT = {
   contentTitle: {
     fontFamily: 'Poppins-SemiBold',
     fontSize: 18,
-    lineHeight: 20,
   },
   contentText: {
     fontFamily: 'Poppins-Regular',
-    fontSize: 16,
+    fontSize: 14,
     lineHeight: 22,
   },
   section: {
@@ -19,5 +18,17 @@ export const FONT = {
     fontFamily: 'Poppins-Semibold',
     fontSize: 22,
     lineHeight: 28,
+  },
+  location: {
+    fontFamily: 'Poppins-SemiBold',
+    fontSize: 14,
+  },
+  button: {
+    fontFamily: 'Poppins-Regular',
+    fontSize: 12,
+  },
+  category: {
+    fontFamily: 'Poppins-SemiBold',
+    fontSize: 15,
   },
 };
