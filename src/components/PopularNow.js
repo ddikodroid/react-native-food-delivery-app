@@ -15,6 +15,7 @@ const PopularNow = () => {
         price={item.price}
         image={item.image}
         bestSeller={item.bestSeller}
+        key={item.id}
       />
     );
   };

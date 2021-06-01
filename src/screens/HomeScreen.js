@@ -11,11 +11,11 @@ const HomeScreen = () => {
   const renderHome = ({item}) => {
     switch (item.content) {
       case 'banner':
-        return <Banner />;
+        return <Banner key={item.id} />;
       case 'categories':
-        return <Categories />;
+        return <Categories key={item.id} />;
       case 'popular':
-        return <PopularNow />;
+        return <PopularNow key={item.id} />;
     }
   };
   return (
