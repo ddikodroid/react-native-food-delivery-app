@@ -14,4 +14,19 @@ export const popularNow = [
     price: 11.9,
     image: require('../assets/images/sandwich-burger.png'),
   },
+  {
+    id: 3,
+    title: 'Deluxe Beef Burger',
+    subtitle: 'Extra double beef🥩',
+    price: 16.9,
+    image: require('../assets/images/double-beef-burger.png'),
+    bestSeller: true,
+  },
+  {
+    id: 4,
+    title: 'Special HamBurger',
+    subtitle: 'Bacon? Why not?🤤',
+    price: 14.9,
+    image: require('../assets/images/sandwich-burger.png'),
+  },
 ];
