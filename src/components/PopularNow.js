@@ -31,10 +31,11 @@ const PopularNow = () => {
         </TouchableOpacity>
       </View>
       <FlatList
-        horizontal
+        numColumns={2}
         data={popularNow}
         renderItem={renderPopularNow}
         showsHorizontalScrollIndicator={false}
+        contentContainerStyle={styles.content}
       />
     </View>
   );
@@ -71,5 +72,8 @@ const styles = StyleSheet.create({
   iconContainer: {
     backgroundColor: COLOR.darkYellow,
     borderRadius: 5,
+  },
+  content: {
+    alignItems: 'center',
   },
 });
