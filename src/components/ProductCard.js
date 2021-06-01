@@ -2,6 +2,7 @@ import React from 'react';
 import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {FONT} from '../constants/Typography';
 import {COLOR} from '../constants/Color';
+import {WIDTH} from '../constants/Dimension';
 
 const ProductCard = ({title, subtitle, price, image, onPress, bestSeller}) => {
   return (
@@ -29,10 +30,12 @@ export default ProductCard;
 const styles = StyleSheet.create({
   container: {
     backgroundColor: COLOR.white,
-    margin: 20,
-    marginRight: 0,
-    padding: 10,
+    margin: 5,
+    paddingHorizontal: 5,
+    paddingVertical: 10,
     borderRadius: 25,
+    alignItems: 'center',
+    width: WIDTH * 0.475,
   },
   shadow: {
     shadowColor: COLOR.gray,
@@ -45,8 +48,8 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   image: {
-    width: 170,
-    height: 170,
+    width: 150,
+    height: 150,
   },
   detail: {
     alignItems: 'center',
