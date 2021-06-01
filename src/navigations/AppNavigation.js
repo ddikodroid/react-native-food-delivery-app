@@ -20,7 +20,7 @@ const TabBarButton = ({children, onPress}) => {
 
 const Tab = createBottomTabNavigator();
 
-const AppNavigator = ({navigation}) => {
+const AppNavigation = ({navigation}) => {
   return (
     <Tab.Navigator
       initialRouteName="Home"
@@ -96,7 +96,7 @@ const AppNavigator = ({navigation}) => {
   );
 };
 
-export default AppNavigator;
+export default AppNavigation;
 
 const styles = StyleSheet.create({
   button: {
