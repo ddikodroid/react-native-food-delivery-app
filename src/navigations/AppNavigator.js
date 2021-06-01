@@ -12,7 +12,7 @@ import {COLOR} from '../constants/Color';
 
 const TabBarButton = ({children, onPress}) => {
   return (
-    <TouchableOpacity style={[styles.button, styles.shadow]}>
+    <TouchableOpacity style={[styles.button, styles.shadow]} onPress={onPress}>
       <View style={styles.buttonView}>{children}</View>
     </TouchableOpacity>
   );
