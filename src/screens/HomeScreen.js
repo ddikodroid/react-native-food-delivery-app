@@ -6,6 +6,7 @@ import Banner from '../components/Banner';
 import Categories from '../components/Categories';
 import PopularNow from '../components/PopularNow';
 import {home} from '../contents/Home';
+import {WIDTH} from '../constants/Dimension';
 
 const HomeScreen = () => {
   const renderHome = ({item}) => {
@@ -26,6 +27,7 @@ const HomeScreen = () => {
         renderItem={renderHome}
         showsVerticalScrollIndicator={false}
         keyExtractor={(item, index) => index.toString()}
+        contentContainerStyle={styles.contentContainer}
       />
     </SafeAreaView>
   );
@@ -38,5 +40,8 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     backgroundColor: COLOR.white,
+  },
+  contentContainer: {
+    width: WIDTH,
   },
 });
