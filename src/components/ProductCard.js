@@ -1,27 +1,29 @@
 import React from 'react';
-import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {Image, Pressable, StyleSheet, Text, View} from 'react-native';
 import {FONT} from '../constants/Typography';
 import {COLOR} from '../constants/Color';
 import {WIDTH} from '../constants/Dimension';
 
 const ProductCard = ({title, subtitle, price, image, onPress, bestSeller}) => {
   return (
-    <TouchableOpacity style={[styles.container, styles.shadow]}>
-      {bestSeller ? (
-        <View style={styles.bestSeller}>
-          <Text>🔥</Text>
-        </View>
-      ) : null}
-      <Image source={image} style={styles.image} resizeMode="contain" />
-      <View style={styles.detail}>
-        <Text style={styles.title}>{title}</Text>
-        <Text style={styles.subtitle}>{subtitle}</Text>
-        <View style={styles.priceContainer}>
-          <Text style={styles.currency}>$</Text>
-          <Text style={FONT.price}>{price}</Text>
+    <Pressable onPress={onPress}>
+      <View style={[styles.container, styles.shadow]}>
+        {bestSeller ? (
+          <View style={styles.bestSeller}>
+            <Text>🔥</Text>
+          </View>
+        ) : null}
+        <Image source={image} style={styles.image} resizeMode="contain" />
+        <View style={styles.detail}>
+          <Text style={styles.title}>{title}</Text>
+          <Text style={styles.subtitle}>{subtitle}</Text>
+          <View style={styles.priceContainer}>
+            <Text style={styles.currency}>$</Text>
+            <Text style={FONT.price}>{price}</Text>
+          </View>
         </View>
       </View>
-    </TouchableOpacity>
+    </Pressable>
   );
 };
 
@@ -57,6 +59,7 @@ const styles = StyleSheet.create({
   title: {
     ...FONT.contentTitle,
     marginBottom: 5,
+    textAlign: 'center',
   },
   subtitle: {
     ...FONT.contentText,
